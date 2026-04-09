@@ -3,23 +3,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Contacto</title>
+    <title>Formulario de datos</title>
 </head>
 <body>
 
-<h2>Contacto</h2>
+<h2>Registro de datos</h2>
 
-<form action="procesar.php" method="POST">
-    <label for="nombre">Nombre</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+<form action="#" method="post">
+    <label for="nombre_completo">Nombre completo</label><br>
+    <input type="text" id="nombre_completo" name="nombre_completo" maxlength="200" required><br><br>
 
-    <label for="email">Correo electrónico</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="numero_identificacion">Número de identificación</label><br>
+    <input type="number" id="numero_identificacion" name="numero_identificacion" min="1" step="1" required><br><br>
 
-    <label for="mensaje">Mensaje</label><br>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+    <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
 
-    <button type="submit">Enviar</button>
+    <fieldset>
+        <legend>Estado civil</legend>
+        <label for="ec_soltero">
+            <input type="radio" id="ec_soltero" name="estado_civil" value="soltero" required> Soltero
+        </label><br>
+        <label for="ec_casado">
+            <input type="radio" id="ec_casado" name="estado_civil" value="casado"> Casado
+        </label><br>
+        <label for="ec_prefiero_no_decirlo">
+            <input type="radio" id="ec_prefiero_no_decirlo" name="estado_civil" value="prefiero_no_decirlo"> Prefiero no decirlo
+        </label>
+    </fieldset><br>
+
+    <label for="consentimiento_politica">
+        <input type="checkbox" id="consentimiento_politica" name="consentimiento_politica" value="1" required>
+        Acepto la política de manejo de datos personales
+    </label><br><br>
+
+    <input type="submit" value="Enviar">
 </form>
 
 </body>

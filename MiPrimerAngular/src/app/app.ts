@@ -9,7 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.css'
 })
 export class App {
-  bienvenidos = 'Hola Belman';
-
-  Estudiante = ['Cuadernos', 'Gorras', 'Gafas']
+ 
 }
