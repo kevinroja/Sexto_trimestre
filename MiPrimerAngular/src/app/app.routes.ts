@@ -4,7 +4,7 @@ import { Contacto } from './page/contacto/contacto';
 import { Ejercicios } from './page/ejercicios/ejercicios';
 
 export const routes: Routes = [
-{ path: 'inicio', component: Inicio },
+{ path: '', component: Inicio },
 { path: 'contacto', component: Contacto },
 { path: 'ejercicios', component: Ejercicios }
 ];
